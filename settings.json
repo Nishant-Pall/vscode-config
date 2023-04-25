@@ -1,0 +1,294 @@
+{
+	"css.lint.unknownAtRules": "ignore",
+	"editor.fontFamily": "Ubuntu Mono",
+	"editor.fontLigatures": true,
+	"editor.fontSize": 20,
+	"editor.fontWeight": "bold",
+	"editor.multiCursorModifier": "ctrlCmd",
+	"editor.snippetSuggestions": "top",
+	// "workbench.iconTheme": "material-icon-theme",
+	"workbench.colorCustomizations": {
+		"activityBarBadge.background": "#2979FF",
+		"activityBar.activeBorder": "#2979FF",
+		"list.activeSelectionForeground": "#2979FF",
+		"list.inactiveSelectionForeground": "#2979FF",
+		"list.highlightForeground": "#2979FF",
+		"scrollbarSlider.activeBackground": "#2979FF50",
+		"editorSuggestWidget.highlightForeground": "#2979FF",
+		"textLink.foreground": "#2979FF",
+		"progressBar.background": "#2979FF",
+		"pickerGroup.foreground": "#2979FF",
+		"tab.activeBorder": "#2979FF",
+		"notificationLink.foreground": "#2979FF",
+		"editorWidget.resizeBorder": "#2979FF",
+		"editorWidget.border": "#2979FF",
+		"settings.modifiedItemIndicator": "#2979FF",
+		"settings.headerForeground": "#2979FF",
+		"panelTitle.activeBorder": "#2979FF",
+		"breadcrumb.activeSelectionForeground": "#2979FF",
+		"menu.selectionForeground": "#2979FF",
+		"menubar.selectionForeground": "#2979FF",
+		"editor.findMatchBorder": "#2979FF",
+		"selection.background": "#2979FF",
+		"editorInlayHint.foreground": "#868686f0",
+		"editorInlayHint.background": "#3d3d3d48",
+
+		// Overrides for specific kinds of inlay hints
+		"editorInlayHint.typeForeground": "#969494f0",
+		"editorInlayHint.parameterForeground": "#969494f0"
+	},
+	"terminal.integrated.fontFamily": "Ubuntu Mono",
+	"terminal.integrated.fontSize": 18,
+	"terminal.integrated.fontWeight": "bold",
+	"workbench.statusBar.visible": true,
+	// "editor.matchBrackets": false,
+	"extensions.ignoreRecommendations": false,
+	"debug.javascript.terminalOptions": {},
+	"macros": {
+		"openFileAndKeep": ["list.select", "workbench.action.keepEditor"]
+	},
+	"editor.linkedEditing": true,
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"editor.codeActionsOnSave": { "source.fixAll.eslint": true },
+	"trailing-spaces.trimOnSave": true,
+	"color-highlight.markerType": "dot-before",
+	"git.ignoreMissingGitWarning": true,
+	"vsicons.dontShowNewVersionMessage": true,
+	"code-runner.saveAllFilesBeforeRun": true,
+	"code-runner.saveFileBeforeRun": true,
+	"code-runner.runInTerminal": true,
+	"C_Cpp.updateChannel": "Insiders",
+	"http.proxySupport": "off",
+	"code-runner.executorMap": {
+		"javascript": "node",
+		"java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+		"c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		"cpp": "cd $dirWithoutTrailingSlash && g++ -std=c++2a -O2 -Wall $fileName -o $fileNameWithoutExt && ./$fileNameWithoutExt",
+		"objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		"php": "php",
+		"python": "python3 -u",
+		"perl": "perl",
+		"perl6": "perl6",
+		"ruby": "ruby",
+		"go": "go run",
+		"lua": "lua",
+		"groovy": "groovy",
+		"powershell": "powershell -ExecutionPolicy ByPass -File",
+		"bat": "cmd /c",
+		"shellscript": "bash",
+		"fsharp": "fsi",
+		"csharp": "scriptcs",
+		"vbscript": "cscript //Nologo",
+		"typescript": "ts-node",
+		"coffeescript": "coffee",
+		"scala": "scala",
+		"swift": "swift",
+		"julia": "julia",
+		"crystal": "crystal",
+		"ocaml": "ocaml",
+		"r": "Rscript",
+		"applescript": "osascript",
+		"clojure": "lein exec",
+		"haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+		"rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+		"racket": "racket",
+		"scheme": "csi -script",
+		"ahk": "autohotkey",
+		"autoit": "autoit3",
+		"dart": "dart",
+		"pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+		"d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+		"haskell": "runhaskell",
+		"nim": "nim compile --verbosity:0 --hints:off --run",
+		"lisp": "sbcl --script",
+		"kit": "kitc --run",
+		"v": "v run",
+		"sass": "sass --style expanded",
+		"scss": "scss --style expanded",
+		"less": "cd $dir && lessc $fileName $fileNameWithoutExt.css"
+	},
+	"terminal.integrated.commandsToSkipShell": ["workbench.action.togglePanelPosition"],
+	"workbench.sideBar.location": "left",
+	"workbench.startupEditor": "newUntitledFile",
+	"explorer.confirmDelete": false,
+	"path-intellisense.autoSlashAfterDirectory": true,
+	"editor.suggestSelection": "first",
+	"python.languageServer": "Pylance",
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+		// "editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"jupyter.alwaysTrustNotebooks": true,
+	"jupyter.allowUnauthorizedRemoteConnection": true,
+	"jupyter.themeMatplotlibPlots": true,
+	"jupyter.jupyterCommandLineArguments": [],
+	"jupyter.changeDirOnImportExport": true,
+	"jupyter.exportWithOutputEnabled": true,
+	"jupyter.jupyterLaunchTimeout": 6000,
+	"jupyter.askForKernelRestart": false,
+	"liveServer.settings.donotShowInfoMsg": true,
+	// "liveshare.authenticationProvider": "GitHub",
+	"sync.gist": "1f138c63ba6c3320bf1e905fa7cd02d6",
+	"workbench.editorAssociations": {
+		"*.ipynb": "jupyter.notebook.ipynb"
+	},
+	"terminal.integrated.env.linux": {},
+	"terminal.integrated.env.windows": {},
+	"terminal.integrated.automationShell.windows": "",
+	// "vim.enableNeovim": true,
+	// "vim.neovimPath": "~/.local/share/nvim/",
+	// "vscode-neovim.neovimExecutablePaths.linux": "~/.local/share/nvim",
+	"vim.handleKeys": {
+		"<C-w>": false,
+		"<C-n>": false
+	},
+	// "terminal.integrated.defaultProfile.windows": "Ubuntu-20.04 (WSL)",
+	// "terminal.integrated.profiles.windows": {
+	//   "PowerShell": {
+	//     "source": "PowerShell",
+	//     "icon": "terminal-powershell"
+	//   },
+	//   "Command Prompt": {
+	//     "path": [
+	//       "${env:windir}\\Sysnative\\cmd.exe",
+	//       "${env:windir}\\System32\\cmd.exe"
+	//     ],
+	//     "args": [],
+	//     "icon": "terminal-cmd"
+	//   },
+	//   "Git Bash": {
+	//     "source": "Git Bash",
+	//     "path": ["D:\\Code_Blooded\\Git\\bin\\bash.exe"],
+	//     "icon": "terminal-bash"
+	//   }
+	// },
+	"discord.iconMap": {
+		".c": "c",
+		".htm": "html",
+		".html": "html",
+		".gitignore": "git",
+		".js": "js",
+		".json": "json",
+		".md": "markdown",
+		".py": "python",
+		"package.json": "npm",
+		".ts": "typescript",
+		".lua": "lua",
+		".vue": "vue"
+	},
+	"Lua.telemetry.enable": true,
+	// "vscode-neovim.neovimInitVimPaths.linux": "~/.config/nvim",
+	"vim.insertModeKeyBindings": [
+		{
+			"before": ["j", "k"],
+			"after": ["<esc>"]
+		},
+		{
+			"before": ["k", "k"],
+			"after": ["<esc>", "O"]
+		}
+	],
+	"auto-close-tag.activationOnLanguage": ["xml", "ejs", "javascriptreact", "typescriptreact", "HTML (Eex)"],
+	"C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
+	"editor.cursorStyle": "line",
+	"editor.lineNumbers": "relative",
+	"editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+	"editor.wordWrap": "off",
+	"screencastMode.fontSize": 60,
+	"discord.largeImageIdling": "Fucking around",
+	"discord.lowerDetailsIdling": "Fucking around",
+	"discord.detailsIdling": "Tripping",
+	"workbench.colorTheme": "Gruvbox Dark Hard",
+	"python.defaultInterpreterPath": "/usr/bin/python3",
+	"workbench.iconTheme": "material-icon-theme",
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"[css]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"sql-formatter.uppercase": true,
+	"C_Cpp.enhancedColorization": "Disabled",
+	"git.confirmSync": false,
+	"editor.acceptSuggestionOnEnter": "off",
+	"javascript.format.semicolons": "insert",
+	"typescript.format.semicolons": "insert",
+	"go.toolsManagement.autoUpdate": true,
+	"vim.normalModeKeyBindings": [
+		{
+			"before": ["u"],
+			"commands": ["undo"]
+		},
+		{
+			"before": ["<C-r>"],
+			"commands": ["redo"]
+		}
+	],
+	"prettier.tabWidth": 4,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"gopls": {
+		"experimentalWorkspaceModule": true
+	},
+	"explorer.confirmDragAndDrop": false,
+	"window.zoomLevel": 0,
+	"yaml.schemas": {
+		"file:///home/prhyme/.vscode/extensions/atlassian.atlascode-2.9.1/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+	},
+	"atlascode.jira.enabled": false,
+	"gitlens.views.branches.branches.layout": "list",
+	"bracketPairColorizer.depreciation-notice": false,
+	"redhat.telemetry.enabled": true,
+	"prettier.printWidth": 120,
+	"editor.suggest.localityBonus": true,
+	"python.analysis.completeFunctionParens": true,
+	"python.formatting.autopep8Path": "/home/prhyme/.local/bin/autopep8",
+	"[python]": {
+		"editor.formatOnSave": true,
+		"editor.formatOnType": true,
+		"editor.defaultFormatter": "ms-python.python"
+	},
+	"editor.formatOnSave": true,
+	"security.workspace.trust.untrustedFiles": "open",
+	"rust-client.rustupPath": "$HOME/.cargo/bin/rustup",
+	"editor.inlayHints.enabled": "on",
+	"npm.keybindingsChangedWarningShown": true,
+	"emmet.showSuggestionsAsSnippets": true,
+	"editor.smoothScrolling": true,
+	"editor.cursorSmoothCaretAnimation": "on",
+	"terminal.integrated.smoothScrolling": true,
+	"workbench.list.smoothScrolling": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"vetur.format.defaultFormatter.html": "prettier",
+	"vetur.format.defaultFormatter.css": "prettier",
+	"vetur.format.defaultFormatter.postcss": "prettier",
+	"vetur.format.defaultFormatter.scss": "prettier",
+	"vetur.format.defaultFormatter.less": "prettier",
+	"vetur.format.defaultFormatter.stylus": "stylus-supremacy",
+	"vetur.format.defaultFormatter.js": "prettier",
+	"vetur.format.defaultFormatter.ts": "prettier",
+	"vetur.format.options.tabSize": 4,
+	"vetur.ignoreProjectWarning": true,
+	"vetur.validation.templateProps": true,
+	"prettier.useTabs": true,
+	"editor.indentSize": "tabSize",
+	"vetur.format.options.useTabs": true,
+	"terminal.integrated.tabStopWidth": 4,
+	"editor.guides.bracketPairsHorizontal": false,
+	"javascript.suggest.completeFunctionCalls": true,
+	"volar.format.initialIndent": {
+		"html": true
+	},
+	"eslint.workingDirectories": [
+		{
+			"mode": "auto"
+		}
+	],
+	"jupyter.interactiveWindow.textEditor.executeSelection": true,
+	"editor.insertSpaces": false
+}
