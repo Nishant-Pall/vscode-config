@@ -2,7 +2,7 @@
 	"css.lint.unknownAtRules": "ignore",
 	"editor.fontFamily": "Ubuntu Mono",
 	"editor.fontLigatures": true,
-	"editor.fontSize": 20,
+	"editor.fontSize": 17,
 	"editor.fontWeight": "bold",
 	"editor.multiCursorModifier": "ctrlCmd",
 	"editor.snippetSuggestions": "top",
@@ -38,7 +38,7 @@
 		"editorInlayHint.parameterForeground": "#969494f0"
 	},
 	"terminal.integrated.fontFamily": "Ubuntu Mono",
-	"terminal.integrated.fontSize": 18,
+	"terminal.integrated.fontSize": 15,
 	"terminal.integrated.fontWeight": "bold",
 	"workbench.statusBar.visible": true,
 	// "editor.matchBrackets": false,
@@ -51,7 +51,7 @@
 	"[javascript]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
-	"editor.codeActionsOnSave": { "source.fixAll.eslint": true },
+	// "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
 	"trailing-spaces.trimOnSave": true,
 	"color-highlight.markerType": "dot-before",
 	"git.ignoreMissingGitWarning": true,
@@ -110,7 +110,7 @@
 		"less": "cd $dir && lessc $fileName $fileNameWithoutExt.css"
 	},
 	"terminal.integrated.commandsToSkipShell": ["workbench.action.togglePanelPosition"],
-	"workbench.sideBar.location": "left",
+	"workbench.sideBar.location": "right",
 	"workbench.startupEditor": "newUntitledFile",
 	"explorer.confirmDelete": false,
 	"path-intellisense.autoSlashAfterDirectory": true,
@@ -190,7 +190,25 @@
 			"after": ["<esc>", "O"]
 		}
 	],
-	"auto-close-tag.activationOnLanguage": ["xml", "ejs", "javascriptreact", "typescriptreact", "HTML (Eex)"],
+	"files.exclude": {
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true,
+		"**/tmp": true,
+		"**/node_modules": true,
+		"**/bower_components": true,
+		"**/dist": true
+	},
+	"files.watcherExclude": {
+		"**/.git/objects/**": true,
+		"**/.git/subtree-cache/**": true,
+		"**/node_modules/**": true,
+		"**/tmp/**": true,
+		"**/bower_components/**": true,
+		"**/dist/**": true
+	},
+	"auto-close-tag.activationOnLanguage": ["xml", "ejs", "javascriptreact", "typescriptreact", "HTML (Eex)", "vue"],
 	"C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
 	"editor.cursorStyle": "line",
 	"editor.lineNumbers": "relative",
@@ -236,7 +254,6 @@
 		"experimentalWorkspaceModule": true
 	},
 	"explorer.confirmDragAndDrop": false,
-	"window.zoomLevel": 0,
 	"yaml.schemas": {
 		"file:///home/prhyme/.vscode/extensions/atlassian.atlascode-2.9.1/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
 	},
@@ -290,5 +307,33 @@
 		}
 	],
 	"jupyter.interactiveWindow.textEditor.executeSelection": true,
-	"editor.insertSpaces": false
+	"emmet.includeLanguages": {
+		"vue-html": "html"
+	},
+	"emmet.useInlineCompletions": true,
+	"vue.updateImportsOnFileMove.enabled": true,
+	"python.formatting.provider": "black",
+	"python.globalModuleInstallation": true,
+	"python.formatting.yapfPath": "black",
+	"editor.detectIndentation": true,
+	"editor.insertSpaces": true,
+	"editor.tabSize": 4,
+	"python.analysis.autoImportCompletions": true,
+	"editor.occurrencesHighlight": false,
+	"highlight-matching-tag.noDefaultEmptyElements": true,
+	"highlight-matching-tag.highlightSelfClosing": true,
+	"highlight-matching-tag.highlightFromContent": true,
+	"vim.highlightedyank.enable": true,
+	"highlight-matching-tag.styles": {
+		"opening": {
+			"name": {
+				"highlight": "rgba(180, 120, 80, 0.3)"
+			}
+		},
+		"closing": {
+			"name": {
+				"highlight": "rgba(180, 120, 80, 0.3)"
+			}
+		}
+	}
 }
