@@ -1,149 +1,159 @@
 // Place your key bindings in this file to override the defaults
 [
-    // {
-    //     "key": "enter",
-    //     "command": "macros.openFileAndKeep",
-    //     "when": "listFocus"
-    // },
-    { "key": "ctrl+shift+k", "command": "workbench.action.terminal.focusNext" },
-    {
-        "key": "ctrl+shift+j",
-        "command": "workbench.action.terminal.focusPrevious"
-    },
-    {
-        "key": "shift+alt+]",
-        "command": "workbench.panel.defaultLocation"
-    },
-    {
-        "key": "shift+z shift+e",
-        "command": "workbench.action.toggleZenMode"
-    },
-    {
-        "key": "ctrl+k z",
-        "command": "-workbench.action.toggleZenMode"
-    },
-    {
-        "key": "alt+t",
-        "command": "workbench.action.terminal.sendSequence",
-        "args": { "text": "cd '${fileDirname}'\u000D" }
-    },
-    {
-        "key": "shift+alt+n",
-        "command": "terminalHere.create"
-    },
-    {
-        "key": "alt+n",
-        "command": "workbench.action.positionPanelBottom"
-    },
-    {
-        "key": "alt+m",
-        "command": "workbench.action.positionPanelRight"
-    },
-    {
-        "key": "shift+end",
-        "command": "cursorEnd",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "end",
-        "command": "-cursorEnd",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "shift+end",
-        "command": "-cursorEndSelect",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "shift+numpad7",
-        "command": "cursorHomeSelect",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "shift+home",
-        "command": "-cursorHomeSelect",
-        "when": "textInputFocus"
-    },
-    // {
-    //     "command": "vscode-neovim.compositeEscape1",
-    //     "key": "k",
-    //     "when": "neovim.mode == insert && editorTextFocus",
-    //     "args": "k"
-    // },
-    // {
-    //     "command": "vscode-neovim.compositeEscape1",
-    //     "key": "j",
-    //     "when": "neovim.mode == insert && editorTextFocus",
-    //     "args": "j"
-    // },
-    // {
-    //     "key": "shift+enter",
-    //     "command": "colonize.hold",
-    //     "when": "editorTextFocus"
-    // },
-    // {
-    //     "key": "ctrl+alt+enter",
-    //     "command": "-colonize.hold",
-    //     "when": "editorTextFocus"
-    // },
-    // {
-    //     "key": "ctrl+alt+enter",
-    //     "command": "colonize.endline",
-    //     "when": "editorTextFocus"
-    // },
-    // {
-    //     "key": "shift+enter",
-    //     "command": "-colonize.endline",
-    //     "when": "editorTextFocus"
-    // },
-    {
-        "key": "ctrl+n",
-        "command": "selectNextSuggestion",
-        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-    },
-    {
-        "key": "ctrl+p",
-        "command": "selectPrevSuggestion",
-        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-    },
-    {
-        "key": "ctrl+k",
-        "command": "workbench.action.nextEditor"
-    },
-    {
-        "key": "ctrl+j",
-        "command": "workbench.action.previousEditor"
-    },
-    {
-        "key": "ctrl+shift+k",
-        "command": "editor.action.showHover",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+k ctrl+i",
-        "command": "-editor.action.showHover",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "shift+alt+enter",
-        "command": "jupyter.runcurrentcelladvance",
-        "when": "editorTextFocus && isWorkspaceTrusted && jupyter.hascodecells && !editorHasSelection && !notebookEditorFocused"
-    },
-    {
-        "key": "shift+enter",
-        "command": "-jupyter.runcurrentcelladvance",
-        "when": "editorTextFocus && isWorkspaceTrusted && jupyter.hascodecells && !editorHasSelection && !notebookEditorFocused"
-    },
-    {
-        "key": "ctrl+shift+n",
-        "command": "-workbench.action.newWindow"
-    },
-    {
-        "key": "ctrl+shift+n",
-        "command": "workbench.action.files.newUntitledFile"
-    },
-    {
-        "key": "ctrl+n",
-        "command": "-workbench.action.files.newUntitledFile"
-    }
+	// {
+	//     "key": "enter",
+	//     "command": "macros.openFileAndKeep",
+	//     "when": "listFocus"
+	// },
+	{ "key": "Cmd+shift+k", "command": "workbench.action.terminal.focusNext" },
+	{
+		"key": "Cmd+shift+j",
+		"command": "workbench.action.terminal.focusPrevious"
+	},
+	{
+		"key": "shift+alt+]",
+		"command": "workbench.panel.defaultLocation"
+	},
+	{
+		"key": "f9",
+		"command": "workbench.action.toggleZenMode"
+	},
+	{
+		"key": "Cmd+k z",
+		"command": "-workbench.action.toggleZenMode"
+	},
+	{
+		"key": "alt+t",
+		"command": "workbench.action.terminal.sendSequence",
+		"args": { "text": "cd '${fileDirname}'\u000D" }
+	},
+	{
+		"key": "shift+alt+n",
+		"command": "terminalHere.create"
+	},
+	{
+		"key": "alt+n",
+		"command": "workbench.action.positionPanelBottom"
+	},
+	{
+		"key": "alt+m",
+		"command": "workbench.action.positionPanelRight"
+	},
+	{
+		"key": "shift+end",
+		"command": "cursorEnd",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "end",
+		"command": "-cursorEnd",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "shift+end",
+		"command": "-cursorEndSelect",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "shift+numpad7",
+		"command": "cursorHomeSelect",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "shift+home",
+		"command": "-cursorHomeSelect",
+		"when": "textInputFocus"
+	},
+	// {
+	//     "command": "vscode-neovim.compositeEscape1",
+	//     "key": "k",
+	//     "when": "neovim.mode == insert && editorTextFocus",
+	//     "args": "k"
+	// },
+	// {
+	//     "command": "vscode-neovim.compositeEscape1",
+	//     "key": "j",
+	//     "when": "neovim.mode == insert && editorTextFocus",
+	//     "args": "j"
+	// },
+	// {
+	//     "key": "shift+enter",
+	//     "command": "colonize.hold",
+	//     "when": "editorTextFocus"
+	// },
+	// {
+	//     "key": "Cmd+alt+enter",
+	//     "command": "-colonize.hold",
+	//     "when": "editorTextFocus"
+	// },
+	// {
+	//     "key": "Cmd+alt+enter",
+	//     "command": "colonize.endline",
+	//     "when": "editorTextFocus"
+	// },
+	// {
+	//     "key": "shift+enter",
+	//     "command": "-colonize.endline",
+	//     "when": "editorTextFocus"
+	// },
+	{
+		"key": "Cmd+n",
+		"command": "selectNextSuggestion",
+		"when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+	},
+	{
+		"key": "Cmd+p",
+		"command": "selectPrevSuggestion",
+		"when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+	},
+	{
+		"key": "Cmd+k",
+		"command": "workbench.action.nextEditor"
+	},
+	{
+		"key": "Cmd+j",
+		"command": "workbench.action.previousEditor"
+	},
+	{
+		"key": "Cmd+shift+k",
+		"command": "editor.action.showHover",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "Cmd+k Cmd+i",
+		"command": "-editor.action.showHover",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "shift+alt+enter",
+		"command": "jupyter.runcurrentcelladvance",
+		"when": "editorTextFocus && isWorkspaceTrusted && jupyter.hascodecells && !editorHasSelection && !notebookEditorFocused"
+	},
+	{
+		"key": "shift+enter",
+		"command": "-jupyter.runcurrentcelladvance",
+		"when": "editorTextFocus && isWorkspaceTrusted && jupyter.hascodecells && !editorHasSelection && !notebookEditorFocused"
+	},
+	{
+		"key": "Cmd+shift+n",
+		"command": "-workbench.action.newWindow"
+	},
+	{
+		"key": "Cmd+shift+n",
+		"command": "workbench.action.files.newUntitledFile"
+	},
+	{
+		"key": "Cmd+n",
+		"command": "-workbench.action.files.newUntitledFile"
+	},
+	{
+		"key": "f12",
+		"command": "editor.action.revealDefinition",
+		"when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+	},
+	{
+		"key": "f12",
+		"command": "-editor.action.revealDefinition",
+		"when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+	}
 ]
