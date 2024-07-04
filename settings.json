@@ -127,7 +127,8 @@
   // "liveshare.authenticationProvider": "GitHub",
   // "sync.gist": "1f138c63ba6c3320bf1e905fa7cd02d6",
   "workbench.editorAssociations": {
-    "*.ipynb": "jupyter.notebook.ipynb"
+    "*.ipynb": "jupyter.notebook.ipynb",
+    "*.html": "default"
   },
   "terminal.integrated.env.linux": {},
   "terminal.integrated.env.windows": {},
@@ -191,7 +192,6 @@
     "**/.svn": true,
     "**/bower_components": true,
     "**/CVS": true,
-    "**/dist": true,
     "**/tmp": true
   },
   "files.watcherExclude": {
@@ -221,7 +221,7 @@
   // "discord.detailsIdling": "Tripping",
   "workbench.colorTheme": "Gruvbox Dark Hard",
   "python.defaultInterpreterPath": "/usr/bin/python3",
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "gruvbox-material-icon-theme",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "[typescript]": {
@@ -333,7 +333,6 @@
   },
   "emmet.showSuggestionsAsSnippets": true,
   "emmet.showExpandedAbbreviation": "always",
-  "editor.bracketPairColorization.enabled": true,
   "vue.blocks": {},
   "vue.server.fullCompletionList": true,
   "vueDiscovery.propCase": "camel",
@@ -394,5 +393,9 @@
   "editorconfig.generateAuto": false,
   "go.toolsManagement.autoUpdate": true,
   "javascript.preferGoToSourceDefinition": true,
-  "typescript.preferGoToSourceDefinition": true
+  "typescript.preferGoToSourceDefinition": true,
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  "terminal.integrated.gpuAcceleration": "canvas"
 }
