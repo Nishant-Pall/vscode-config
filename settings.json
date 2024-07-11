@@ -397,5 +397,6 @@
   "[go]": {
     "editor.defaultFormatter": "golang.go"
   },
-  "terminal.integrated.gpuAcceleration": "canvas"
+  "terminal.integrated.gpuAcceleration": "canvas",
+  "scm.experimental.showHistoryGraph": true
 }
