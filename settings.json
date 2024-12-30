@@ -355,7 +355,7 @@
   "[yaml]": {
     "editor.autoIndent": "advanced",
     // "editor.defaultFormatter": "kennylong.kubernetes-yaml-formatter",
-    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
   "[dockercompose]": {
@@ -398,5 +398,18 @@
     "editor.defaultFormatter": "golang.go"
   },
   "terminal.integrated.gpuAcceleration": "canvas",
-  "scm.experimental.showHistoryGraph": true
+  "scm.experimental.showHistoryGraph": true,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[dockerfile]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[dotenv]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "chat.commandCenter.enabled": false
 }
